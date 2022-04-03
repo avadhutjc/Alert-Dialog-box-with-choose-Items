@@ -1,14 +1,10 @@
 package com.example.alertdialog;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-
 import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.DialogInterface;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -16,7 +12,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
         final TextView tvSelectedItemsPreview = findViewById(R.id.selectedItemPreview);
 
         // initialise the list items for the alert dialog
-        final String[] listItems = new String[]{"C", "C++", "JAVA", "PYTHON"};
+        final String[] listItems = new String[]
+                {"C", "C++", "JAVA", "PYTHON"};
         final boolean[] checkedItems = new boolean[listItems.length];
 
         // copy the items from the main list to the selected item list
@@ -98,7 +94,6 @@ public class MainActivity extends AppCompatActivity {
 
                 // create the builder
                 builder.create();
-
                 // create the alert dialog with the
                 // alert dialog builder instance
                 AlertDialog alertDialog = builder.create();
